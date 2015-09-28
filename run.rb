@@ -9,7 +9,7 @@ end
 
 get '/years' do
 
-	@years = [1972, 1973, 1974, 1975, 1976]
+	@years = (1972..2013).to_a
 
   # code!
   erb :years, layout: :main
